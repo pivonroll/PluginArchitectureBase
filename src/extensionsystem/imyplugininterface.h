@@ -6,14 +6,14 @@
 
 #define IPlugin_iic "com.PluginTest.extensionsystem.IPlugin"
 
-class EXTENSIONSYSTEM_EXPORT IPlugin
+class EXTENSIONSYSTEM_EXPORT IPlugin : public QObject
 {
+    Q_OBJECT
+
 public:
     IPlugin();
     virtual ~IPlugin();
     virtual void initialize() = 0;
 };
-
-Q_DECLARE_INTERFACE(IPlugin, IPlugin_iic)
 
 #endif // IMyPluginInterface_H

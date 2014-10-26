@@ -4,12 +4,13 @@
 #include <QObject>
 #include <imyplugininterface.h>
 
-class FirstPlugin : public QObject, public IPlugin
+class FirstPlugin : public IPlugin
 {
     Q_OBJECT
-    Q_INTERFACES(IPlugin)
+    Q_PLUGIN_METADATA(IID "org.radovan.test" FILE "firstplugin.json")
+
 public:
-    explicit FirstPlugin(QObject *parent = 0);
+    explicit FirstPlugin();
     ~FirstPlugin();
 
     void initialize();

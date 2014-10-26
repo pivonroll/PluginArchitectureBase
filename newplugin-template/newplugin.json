@@ -1,0 +1,10 @@
+{
+    "Name" : "%PluginName%",
+    "Version" : "0.1",
+    "CompatVersion" : "0.1",
+    "Vendor" : "%VendorName%",
+    "Copyright" : "(C) 2014 %VendorName%",
+    "License" : "%License%",
+    "Category" : "C++",
+    "Description" : "%Description%"
+}
